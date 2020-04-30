@@ -1,13 +1,4 @@
-{
-  "builds": [
-    {
-        "src": "**",
-        "use": "@now/static",
-        "config": {
-            "debug": true
-        }
-     }
-  ]
-}
-
-
+ {
+   "regions": ["iad1"],
+   "build": { "env": { "FORCE_BUILD_IN_REGION": "iad1", "NOW_DEBUG": "1" } }
+ }
